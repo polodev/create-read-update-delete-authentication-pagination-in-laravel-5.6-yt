@@ -31,7 +31,32 @@ php artisan make:factory yourfactory -m "App\YourmodelName"
 
 php artisan make:model -a 
 
+posts 
+  title 
+  content 
 
+post and get 
+
+post 
+get 
+put 
+patch 
+delete 
+
+get all posts 
+get single post 
+get show form for create post 
+post store route 
+get edit 
+put/patch update 
+delete 
+
+
+crud 
+create 
+read 
+update 
+delete 
 
 
 
