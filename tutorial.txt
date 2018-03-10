@@ -1,0 +1,37 @@
+mvc 
+
+route 
+controller <====> model 
+view
+
+model 
+view 
+controller
+
+
+routes/web.php
+database/seeds/databaseSeeder.php
+
+
+
+app/Http/Controllers/Yourcontroller.php
+app/yourmodel.php 
+resoures/view/Yourview.php
+database/factories/yourfactory.php
+database/migrations/yourmigrationfile.php
+
+
+
+
+php artisan make:model YourmodelName
+php artisan make:controller YourcontrollerName
+php artisan make:migration create_your_table_name
+php artisan make:factory yourfactory -m "App\YourmodelName"
+
+
+php artisan make:model -a 
+
+
+
+
+
