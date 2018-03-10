@@ -12,7 +12,7 @@
     @auth
     <form class="d-inline-block float-right" action="{{route('logout')}}" method="post">
       @csrf
-      <button class="btn btn-secondary">Logout</button>
+      <button class="btn btn-secondary">{{auth()->user()->name}} | Logout</button>
     </form>
     @else 
       <a href="{{route('login')}}" class="btn btn-secondary">Login</a>
