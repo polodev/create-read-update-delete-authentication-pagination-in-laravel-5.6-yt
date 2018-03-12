@@ -10,6 +10,9 @@ controller <====> model
 view
 ~~~
 
+## software requirements 
+php, mysql, <a href="https://getcomposer.org/">composer</a> need to be installed in your mac, pc or linux system before creating project in laravel   
+
 ## installing laravel using composer 
 
 ~~~php
@@ -77,7 +80,7 @@ Schema::defaultStringLength(191);
 ~~~
 
 
-## writing column database table structure inside `create_posts_table` migration file
+## writing database table structure inside `create_posts_table` migration file
 
 ~~~php
 $table->string('title');
@@ -97,9 +100,10 @@ php artisan migrate
 'content' => $faker->paragraph(6)
 ~~~
 
-## calling factory inside `DatabaseSeeder.php` file
+## calling factory `DatabaseSeeder.php` file
 
 ~~~php
+# inside run method
 factory(Post::class, 30)->create();
 ~~~
 
@@ -300,13 +304,39 @@ auth()->user()->name
 protected $redirectTo = '/posts';
 ~~~
 
-## further reading    
+## how to run other people's laravel project in your pc   
 
-https://laravel.com/docs/5.6   
+~~~php
+# installing vendor 
+composer install
+
+# clearing old config
+php artisan config:clear
+php artisan cache:clear
+
+# making .env file 
+copy .env.example file to .env file and changed database credentials    
+
+# generating unique key for laravel app
+php artisan key:generate
+
+# migrate to database 
+php artisan migrate
+
+# seed with dummy data 
+php artisan db:seed
+
+# run local development server 
+php artisan serve
+
+~~~
+
+
+## further reading    
+<a href="https://laravel.com/docs/5.6">https://laravel.com/docs/5.6</a>         
 
 ## watch laracast jeffrey way's tutorial. He is the best web trainer in the planet. You will agree eventually after watching his tutorial. 
-
-https://laracasts.com/  
+<a href="https://laracasts.com/">https://laracasts.com/</a>               
 
 
 ## Thank You
