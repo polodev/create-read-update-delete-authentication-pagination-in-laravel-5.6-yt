@@ -100,7 +100,7 @@ php artisan migrate
 'content' => $faker->paragraph(6)
 ~~~
 
-## calling factory `DatabaseSeeder.php` file
+## calling factory inside `DatabaseSeeder.php` file
 
 ~~~php
 # inside run method
