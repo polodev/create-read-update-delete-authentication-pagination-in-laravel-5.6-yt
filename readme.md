@@ -221,8 +221,10 @@ $this->validate($request, [
 ~~~php
 ## inside controller 
 $posts = Post::orderBy('id', 'desc')->paginate(10);
+
 ## inside view 
-{{$posts->links()}}
+$posts->links()
+
 ~~~
 
 
