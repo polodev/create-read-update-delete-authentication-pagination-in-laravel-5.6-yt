@@ -36,7 +36,7 @@ routes/web.php
 database/seeds/databaseSeeder.php
 ~~~
 
-factories and seeds only change when we work with dummy/test data
+factories and seeds only require when we work with dummy/test data
 
 ## command for making model, controller, factory and migration file 
 
